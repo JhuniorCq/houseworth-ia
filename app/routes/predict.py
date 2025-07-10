@@ -4,7 +4,7 @@ from app.utils.prediction import predict_price
 from app.models.model_loader import load_model
 
 router = APIRouter()
-model, expected_columns = load_model()  # 👈 carga también las columnas
+model, expected_columns = load_model()
 
 @router.post("/predict", response_model=PredictionResponse)
 async def predict(data: PredictionRequest):

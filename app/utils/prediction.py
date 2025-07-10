@@ -4,7 +4,6 @@ import numpy as np
 def predict_price(model, expected_columns, features: dict):
     try:
         df = pd.DataFrame([features])
-        # Reordenar las columnas del DataFrame
         df = df[expected_columns]
         prediction = model.predict(df)[0]
         return round(prediction, 2)
