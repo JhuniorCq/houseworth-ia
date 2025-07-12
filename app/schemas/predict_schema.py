@@ -1,6 +1,4 @@
 from pydantic import BaseModel
-from typing import Dict
-
 
 class PredictionRequest(BaseModel):
     GrLivArea: float
@@ -15,27 +13,27 @@ class PredictionRequest(BaseModel):
     SocioEconomicLevel: int
     # Variables one-hot
     Nbhd_Blueste: int
-    Nbhd_Brdale: int
-    Nbhd_Brkside: int
-    Nbhd_Clearcr: int
-    Nbhd_Collgcr: int
+    Nbhd_BrDale: int
+    Nbhd_BrkSide: int
+    Nbhd_ClearCr: int
+    Nbhd_CollgCr: int
     Nbhd_Crawfor: int
     Nbhd_Edwards: int
     Nbhd_Gilbert: int
-    Nbhd_Idotrr: int
-    Nbhd_Meadowv: int
+    Nbhd_IDOTRR: int
+    Nbhd_MeadowV: int
     Nbhd_Mitchel: int
-    Nbhd_Names: int
-    Nbhd_Noridge: int
-    Nbhd_Npkvill: int
-    Nbhd_Nridght: int
-    Nbhd_Nwames: int
-    Nbhd_Oldtown: int
+    Nbhd_NAmes: int
+    Nbhd_NoRidge: int
+    Nbhd_NPkVill: int
+    Nbhd_NridgHt: int
+    Nbhd_NWAmes: int
+    Nbhd_OldTown: int
+    Nbhd_SWISU: int
     Nbhd_Sawyer: int
-    Nbhd_Sawyerw: int
+    Nbhd_SawyerW: int
     Nbhd_Somerst: int
-    Nbhd_Stonebr: int
-    Nbhd_Swisu: int
+    Nbhd_StoneBr: int
     Nbhd_Timber: int
     Nbhd_Veenker: int
 

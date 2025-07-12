@@ -1,8 +1,12 @@
+from app.utils.constants import CAMPO_CORRECCION
 import pandas as pd
-import numpy as np
 
 def predict_price(model, expected_columns, features: dict):
     try:
+        for old_key, new_key in CAMPO_CORRECCION.items():
+            if old_key in features:
+                features[new_key] = features.pop(old_key)
+
         df = pd.DataFrame([features])
         df = df[expected_columns]
         prediction = model.predict(df)[0]
