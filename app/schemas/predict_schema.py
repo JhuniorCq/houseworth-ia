@@ -37,6 +37,5 @@ class PredictionRequest(BaseModel):
     Nbhd_Timber: int
     Nbhd_Veenker: int
 
-
 class PredictionResponse(BaseModel):
     price: float
